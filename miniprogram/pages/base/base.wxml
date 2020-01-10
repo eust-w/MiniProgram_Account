@@ -1,0 +1,30 @@
+<view> {{msg}} </view>
+<!-- <image scr = "{{img}}"></image> -->
+<view wx:for="{{arr}}" wx:key="{{index}}">
+{{index}} {{item}}
+</view>
+<view wx:for="{{list}}" wx:key="{{index}}">
+{{item.name}}{{item.age}}
+</view>
+
+<view wx:if="{{isLogin}}">
+jerry
+</view>
+<view wx:if="{{!isLogin}}">
+tom
+</view>
+<view wx:else>
+请登录
+</view>
+<view wx:hidden="{{isLogin}}">
+hidden
+</view>
+
+<view class="box" bindtap="onTapBoxHandler">
+<view class="child" bindtap="onTapChildHandler"></view>
+</view>
+<view class="box" catchtap="onTapBoxHandler" data-id="1234">
+<view class="child" catchtap="onTapChildHandler"></view>
+</view>
+<button size="mini" bindtap="onTapHander">click me</button>
+<view>{{count}} </view>

@@ -1,0 +1,19 @@
+
+<!-- <image scr = "{{img}}"></image> -->
+<view>cloud database</view>
+<button bindtap="insert">insert</button>
+<button bindtap="update">update</button>
+<button bindtap="search">search</button>
+<button bindtap="delete">delete</button>
+
+<view>cloud function</view>
+<button bindtap="sum">call cloud function</button>
+<button bindtap="getOpenId">get open id</button>
+<button bindtap="batchDelete">batch delete</button>
+<button bindtap="upload">upload</button>
+<button bindtap="getFile">getFile</button>
+<block wx:for="{{images}}">
+<image src="{{item.fileID}}"></image>
+<button data-fileid="{{item.fileID}}" bindtap="downloadFile">download File</button>
+</block>
+<van-button type="primary"> van button</van-button>

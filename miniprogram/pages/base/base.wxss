@@ -1,0 +1,11 @@
+@import '../../style/common.wxss';
+.box{
+  width: 200rpx;
+  background: #ccc;
+  height:200rpx;
+}
+.child{
+  width: 100rpx;
+  background: #bbb;
+  height:100rpx;
+}
